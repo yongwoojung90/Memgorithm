@@ -5,10 +5,10 @@
 //unsigned long temp;
 //unsigned long GCD;
 
-unsigned __int64 N, M;
-unsigned __int64 big, small;
-unsigned __int64 temp;
-unsigned __int64 GCD;
+unsigned long long N, M;
+unsigned long long big, small;
+unsigned long long temp;
+unsigned long long GCD;
 
 void init()
 {
@@ -25,7 +25,7 @@ int main()
 	for (itr = 0; itr < nCount; itr++)
 	{
 		printf("#testcase%d\n", itr + 1);
-		scanf("%d %d", &N, &M);
+		scanf("%llu %llu", &N, &M);
 		if (N > M){
 			big = N; small = M;
 		}
@@ -43,7 +43,7 @@ int main()
 				small = temp;
 			}
 		}
-		printf("%d\n", (N / GCD)*(M / GCD));
+		printf("%llu\n", (N / GCD)*(M / GCD));
 
 		init();
 	}
