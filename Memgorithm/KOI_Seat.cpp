@@ -1,18 +1,18 @@
 #include <stdio.h>
 
-float table[2001000];
+double table[2001000];
 int len=0;
 void init()
 {
 
 }
-int check(float val);
+int check(double val);
 
 int main()
 {
 	int D1, D2;
-	float i = 0;
-	float j = 0;
+	double i = 0;
+	double j = 0;
 	//int temp
 	scanf("%d %d", &D1, &D2);
 
@@ -27,7 +27,7 @@ int main()
 	init();
 	return 1;
 }
-int check(float val)
+int check(double val)
 {
 	int i = 0;
 	for (i = 0; i < len; i++){
